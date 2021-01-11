@@ -1,5 +1,6 @@
 <h1><%= @author.name %></h1>
 <p>Posts:</p>
 <% @author.posts.each do |post| %>
-  <div><%= post.title %></div>
+  <% title post.title %>
+  <div>Title: <%= post.title %></div>
 <% end %>
